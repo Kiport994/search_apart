@@ -4,7 +4,7 @@ from back_site import search_bazos_sk, search_nehnutelnosti_sk, reset_apartmens
 import json
 import time
 
-token = '7957640753:AAFZFRpeQxloxofvPPILe-8JLXa5iu6blOA'
+token = ''
 bot = telebot.TeleBot(token)
 
 commands = [
