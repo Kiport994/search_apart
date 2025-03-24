@@ -3,9 +3,12 @@ from telebot import types
 from back_site import search_bazos_sk, search_nehnutelnosti_sk, reset_apartmens
 import json
 import time
+from dotenv import load_dotenv
+import os
 
-token = ''
-bot = telebot.TeleBot(token)
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+bot = telebot.TeleBot(TOKEN)
 
 commands = [
     telebot.types.BotCommand("start", "Start search"),
